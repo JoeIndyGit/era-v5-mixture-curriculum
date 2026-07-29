@@ -86,10 +86,10 @@ Low-quality web text, unresolved licences, unverified rationales and heavily rep
 
 **Difficulty examples**
 
-- **D1:** extract `InvoiceNumber` from JSON.
-- **D2:** calculate arrival time from departure and duration.
-- **D3:** resolve provider selection across tenant, company, office and user configuration.
-- **D4:** find the earliest routing failure using configuration, request-handler code, API contracts and logs.
+- **D1 – Direct understanding:** Identify the language and source tier of a single training sample (e.g., classify a document as verified Tamil or translated Hindi).
+- **D2 – Quality assessment:** Compare two candidate samples and select the higher-quality one based on language confidence, provenance, duplication score, and formatting quality.
+- **D3 – Multi-constraint data selection:** Decide whether a Telugu reasoning sample should be included in the training mixture by evaluating licence compliance, contamination risk, reasoning length, difficulty band, and replay limits.
+- **D4 – Mixture optimisation:** Analyse dataset inventory, benchmark performance, proxy experiment results, and token budget constraints to recommend an updated data mixture while preserving the protected Indic floor and annealing reserve.
 
 **Reasoning-length examples**
 
