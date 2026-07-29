@@ -1,0 +1,35 @@
+run_name: era-v5-1b-mixture-proxy
+model:
+  type: decoder_only_transformer
+  target_parameters: 1.05B
+  layers: 24
+  hidden_size: 1792
+  attention_heads: 14
+  ffn_size: 4864
+  vocabulary_size: 64000
+  context_length: 8192
+  rope: true
+  rmsnorm: true
+  activation: swiglu
+training:
+  precision: bf16
+  optimizer: AdamW
+  beta1: 0.9
+  beta2: 0.95
+  epsilon: 1.0e-8
+  weight_decay: 0.1
+  schedule: cosine
+  warmup_fraction: 0.01
+  screening_tokens_per_mixture: 5B
+  confirmation_tokens_per_model: 20B
+  checkpoint_every: 1B
+experiment:
+  screening_seed: 17
+  confirmation_seeds: [17, 23, 41]
+  candidates:
+    - supply_proportional_control
+    - final_candidate
+    - indic_14_percent
+    - agentic_2_percent
+    - no_anneal
+  selection: paired_bootstrap_95_percent_ci

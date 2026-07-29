@@ -1,0 +1,10 @@
+id,lane,source,published_supply,target,accounting
+GEN-FWE,General,FineWeb-Edu,1.3T tokens,23B,No replay
+IND-SAN,Indic,Sangraha hi/ta/te,68.18B tokens,18B,Telugu-unverified 1.08x
+CODE-ST2,Code,The Stack v2 train-full,~900B tokens,14B,Licence allow-list; no replay
+MATH-OWM,Mathematics,OpenWebMath,14.7B tokens,8B,No corpus replay
+RSN-MIX,Reasoning,FLAN/Super-NI/OpenMathInstruct-2,Mixed pools,11B,4B generated and verified
+AGT-MIX,Agentic,AgentInstruct + executable environments,Generated/curated pairs,4B,3.2B execution-generated
+LONG-MIX,Long context,Natural long docs + LongAlign,10K task structures + natural docs,6B,No document replay
+SCI-DOL,Science,Dolma academic + SciRIFF,Large published pool,4B,No replay
+SAFE-MIX,Safety,BeaverTails + PKU-SafeRLHF,Labelled pairs/comparisons,2B,1.6B counterfactual generation

@@ -1,0 +1,13 @@
+language,tier,target_B_tokens,published_pool_B_tokens,sampling_factor
+Hindi,Verified,3.0,12.6173,0.2378
+Hindi,Unverified,2.4,12.3483,0.1944
+Hindi,Translated,1.2,9.5787,0.1253
+Hindi,Synthetic,0.6,9.5787,0.0626
+Tamil,Verified,2.5,3.9851,0.6273
+Tamil,Unverified,1.4,1.5159,0.9235
+Tamil,Translated,1.0,11.8593,0.0843
+Tamil,Synthetic,0.5,11.8593,0.0422
+Telugu,Verified,2.6,3.7068,0.7014
+Telugu,Unverified,0.7,0.6474,1.0812
+Telugu,Translated,1.4,11.9245,0.1174
+Telugu,Synthetic,0.7,11.9245,0.0587

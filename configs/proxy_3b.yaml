@@ -1,0 +1,30 @@
+run_name: era-v5-3b-confirmation
+model:
+  type: decoder_only_transformer
+  target_parameters: 3.0B
+  layers: 36
+  hidden_size: 2560
+  attention_heads: 20
+  ffn_size: 6912
+  vocabulary_size: 64000
+  context_length: 16384
+  rope: true
+  rmsnorm: true
+  activation: swiglu
+training:
+  precision: bf16
+  optimizer: AdamW
+  beta1: 0.9
+  beta2: 0.95
+  epsilon: 1.0e-8
+  weight_decay: 0.1
+  schedule: cosine
+  warmup_fraction: 0.01
+  tokens_per_model: 60B
+  checkpoint_every: 5B
+experiment:
+  seed: 17
+  candidates:
+    - winning_1b_candidate
+    - supply_proportional_control
+  full_scale_authorization: only_if_all_mandatory_gates_pass

@@ -1,0 +1,10 @@
+lane,benchmarks,metric,gate
+General,MMLU; ARC-C; HellaSwag,Macro,Regression <=2%
+Indic,IndicGenBench; MILU; FLORES-200,Macro and per-language,Macro +8%; each language +5%
+Code,HumanEval+; MBPP+,Pass@1,Regression <=2%
+Reasoning,BBH; ARC-C; MuSR,Exact-match macro,+3%
+Mathematics,GSM8K; MATH,Exact answer,+3%
+Agentic,AgentBench; held-out tools,Task success/recovery,+5%
+Long context,RULER; LongBench,Accuracy by length/position,+5% at 16K/32K
+Science,SciRIFF held-out; GPQA,Macro,+2%
+Safety,HarmBench; benign controls,ASR/over-refusal,No ASR regression; over-refusal <=+1 point

@@ -1,0 +1,6 @@
+priority,slot,target_B,documented_source_B,remaining_or_to_generate_B,gate
+1,Agentic,4.0,0.8,3.2,Execution success + state/recovery verification
+2,Reasoning,11.0,7.0,4.0,Deterministic/executable/dual-review verification
+3,Safety,2.0,0.4,1.6,Harm-label agreement + benign-control audit
+4,Telugu unverified,0.7,0.6474,0.0526,Language/script audit; replay <=1.25x
+5,Long context,6.0,0.0,6.0,Evidence-position and answer-dependency checks

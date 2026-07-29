@@ -1,0 +1,20 @@
+{
+  "reference_budget_tokens": 100000000000,
+  "selected_candidate": {
+    "general": 23,
+    "indic": 18,
+    "code": 14,
+    "reasoning": 11,
+    "mathematics": 8,
+    "agentic": 4,
+    "long_context": 6,
+    "science": 4,
+    "safety": 2,
+    "annealing_reserve": 10
+  },
+  "protected_floor_percent": 53,
+  "completed_pilot": true,
+  "one_billion_proxy": "GO",
+  "three_billion_proxy": "GATED_BY_1B",
+  "full_scale": "NO_GO_UNTIL_1B_AND_3B_PASS"
+}
